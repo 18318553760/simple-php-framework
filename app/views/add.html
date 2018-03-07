@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block content %}
+<form action="/index/save" method="POST">
+    <fieldset>
+        <legend>添加留言</legend>
+        <div class="">
+            <input type="text" name="title" placeholder="请输入title">
+        </div>
+        <br/>
+        <div class="">
+            <textarea name="content" rows="8" cols="80" placeholder="请输入content"></textarea>
+        </div>
+        <p><button type="submit">提交</button></p>
+    </fieldset>
+</form>
+{% endblock %}
